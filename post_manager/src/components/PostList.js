@@ -25,15 +25,17 @@ const PostList = () => {
     }
 
     return (
-        <ul>
+        <div className="post-list">
             {posts.map(post => (
-                <li key={post.id}>
-                    <h2>{post.name}</h2>
-                    <p>{post.description}</p>
-                    <button onClick={() => dispatch(deletePost(post.id))}>Eliminar</button>
-                </li>
+                <div className="post-card" key={post.id}>
+                    <h2 className="post-title">{post.name}</h2>
+                    <p className="post-description">{post.description}</p>
+                    <button className="delete-button" onClick={() => dispatch(deletePost(post.id))}>Eliminar</button>
+                </div>
             ))}
-        </ul>
+        </div>
+
+
     );
 }
 
