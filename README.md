@@ -46,7 +46,7 @@ sudo apt-get install nodejs npm
 1. Navega al directorio del backend:
 
 ```bash
-cd backend
+cd post_manager_api
 ```
 
 2. Instala las gemas necesarias para el proyecto:
@@ -72,10 +72,10 @@ El servidor del backend debería estar ahora corriendo en http://localhost:3001.
 
 ## Configuración del Frontend
 
-1. Navega al directorio del frontend:
+1. Navega al directorio del frontend desde el directorio raiz del proyecto:
 
 ```bash
-cd ../frontend
+cd post_manager
 ```
 
 2. Instala las dependencias del proyecto:
