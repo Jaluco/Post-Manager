@@ -1,4 +1,4 @@
-# Prueba TCIT
+# Post-Manager hecho con React redux y Ruby on Rails
 
 Este repositorio contiene tanto el backend como el frontend de mi aplicación. El backend se ha desarrollado con Ruby on Rails y el frontend con React Redux.
 
