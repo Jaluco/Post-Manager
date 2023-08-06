@@ -5,7 +5,8 @@ const initialState = {
     posts: [],
     filteredPosts: [],
     loading: false,
-    error: null
+    error: null,
+    filterQuery: ''
 };
 
 const postReducer = createReducer(initialState, {
@@ -28,11 +29,16 @@ const postReducer = createReducer(initialState, {
     },
     [createPost.fulfilled]: (state, action) => {
         state.posts.push(action.payload);
-        state.filteredPosts.push(action.payload);
+    
+        // Solo añadimos el nuevo post a `filteredPosts` si pasa el filtro
+        if (action.payload.name.toLowerCase().includes(state.filterQuery)) {
+            state.filteredPosts.push(action.payload);
+        }
     },
     'posts/filter': (state, action) => {
+        state.filterQuery = action.payload;
         state.filteredPosts = state.posts.filter(post => post.name.toLowerCase().includes(action.payload));
-    }
+    }    
 });
 
 export default postReducer;
