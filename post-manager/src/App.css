@@ -1,0 +1,81 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+}
+
+.posts, .filter, .post-form {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px #cccccc solid;
+  background: #ffffff;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post h3 {
+  margin: 0;
+}
+
+.post button, .filter button, .post-form button {
+  background: #e8491d;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.post button:hover, .filter button:hover, .post-form button:hover {
+  background: #354458;
+}
+
+.filter input, .post-form input {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px #cccccc solid;
+}
+
+form {
+  width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+form input[type="text"], form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: white;
+  background-color: #ff4d4f;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
